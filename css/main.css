@@ -1,0 +1,1999 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+  font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+  font-family: arial,helvetica;
+  color: #333;
+  color: rgba(0,0,0,0.5);
+}
+
+.wrap{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+
+h1{
+  font: bold 2em Sans-Serif;
+  margin: 0 auto;
+  color: #f47321;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1em;
+  margin: 0 auto;
+  line-height: 1.3em;
+  text-align: left;
+  color: #fff;
+  font-weight: normal;
+}
+
+p a:link {
+  color: #f87f32;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+p a:visited {
+  color: #f87f32;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+p a:hover {
+  color: #e35b2e;
+}
+
+.section{
+  text-align:left;
+}
+
+.slicknav_menu {
+  display:none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/*Smartphones (Portrait and Landscape)*/
+
+@media screen and (min-width: 200px) {
+
+  #footer{
+    display:none;
+  }
+
+  .slicknav_menu {
+  display:block;
+  position: fixed;
+  z-index: 9;
+  padding-top: .8em;
+  padding-bottom: .8em;
+  background: -webkit-linear-gradient(90deg, #135e4a 10%, #1d815b 90%,); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* IE10 */
+  background: -o-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* W3C */
+  width: 100%;
+  } 
+
+  .slicknav_menu a.slicknav {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #fff;
+    padding-left: .5em;
+  }
+
+  .slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer; }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em; }
+
+  .slicknav_menu {
+  *zoom: 1; }
+
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    font-size: 1em;
+    line-height: 1em;
+    float: left;
+    color: #fff; }
+
+    .desktop-container {
+      display: none;
+    }
+
+    .mobile-container{
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    }
+
+    .mobile-image {
+      width: 100%;
+      height: 100%;
+/*      flex-grow: 2;
+*/    }
+
+    .mobile-img {
+      display: flex;
+      width: 100%;
+      max-height: 60%;
+/*      flex-grow: 2;
+*/    }
+
+    .textbox {
+    display: block;
+/*    flex-grow: 1;
+*//*    height: 25%;
+*/
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: rgb(53,53,53);
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    vertical-align: text-top;
+/*   box-sizing:border-box;
+    -moz-box-sizing:border-box;*/
+   }
+
+
+  .textbox h1 {
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1em;
+    margin-left: .5em;
+    margin-top: .6em;
+    margin-bottom: .3em;
+  }
+
+  .textbox p {
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.2em;
+    margin-left: .8em;
+    margin-right: .8em;
+    margin-bottom: .5em;
+  }
+
+  #section0{
+     background-image: none;
+  }
+
+/*CAMPUS START*/
+
+  #slidea1{
+    background-image: none;
+  }
+
+  #slidea2{
+    background-image: none;
+  }
+
+  #slidea3{
+    background-image: none;
+  }
+
+  #slidea4{
+    background-image: none;
+  }
+
+  #slidea5{
+    background-image: none;
+  }
+
+  #slidea6{
+    background-image: none;
+  }
+
+  #slidea7{
+    background-image: none;
+  }
+
+  #slidea8{
+    background-image: none;
+  }
+
+  #slidea9{
+    background-image: none;
+  }
+
+  #slidea10{
+    background-image: none;
+  }
+
+  #slidea11{
+    background-image: none;
+  }
+
+  #slidea12{
+    background-image: none;
+  }
+
+  #slidea13{
+    background-image: none;
+  }
+
+  #slidea14{
+    background-image: none;
+  }
+
+  #slidea15{
+    background-image: none;
+  }
+
+  #slidea16{
+    background-image: none;
+  }
+
+  #slidea17{
+    background-image: none;
+  }
+
+  #slidea18{
+    background-image: none;
+  }
+
+  #slidea19{
+    background-image: none;
+  }
+
+  #slidea20{
+    background-image: none;
+  }
+
+  #slidea21{
+    background-image: none;
+  }
+
+  #slidea22{
+    background-image: none;
+  }
+
+  #slidea23{
+    background-image: none;
+  }
+
+  #slidea24{
+    background-image: none;
+  }
+
+  #slidea25{
+    background-image: none;
+  }
+
+/*CAMPUS END*/
+
+/* LAW SCHOOL START */
+
+  #slideb1{
+    background-image: none; 
+  }
+  #slideb2{
+    background-image: none; 
+  }
+
+  #slideb3{
+    background-image: none;
+  }
+  #slideb4{
+    background-image: none; 
+  }
+
+  #slideb5{
+    background-image: none;
+  }
+  #slideb6{
+    background-image: none;
+  }
+
+  #slideb7{
+    background-image: none;
+  }
+  #slideb8{
+    background-image: none;
+  }
+  #slideb9{
+    background-image: none;
+  }
+  #slideb10{
+    background-image: none;
+  }
+  #slideb11{
+    background-image: none; 
+  }
+  #slideb12{
+    background-image: none; 
+  }
+  #slideb13{
+    background-image: none; 
+  }
+  #slideb14{
+    background-image: none;  
+  }
+  #slideb15{
+    background-image: none;  
+  }
+
+/* LAW SCHOOL END */
+
+/* Start Neighborhood Section*/
+
+  #slidec1{
+    background-image: none;
+  }
+  #slidec2{
+    background-image: none;
+  }
+
+  #slidec3{
+    background-image: none;
+  }
+  #slidec4{
+    background-image: none;
+  }
+
+  #slidec5{
+    background-image: none;
+  }
+  #slidec6{
+    background-image: none;
+  }
+
+  #slidec7{
+    background-image: none;
+  }
+  #slidec8{
+    background-image: none;
+  }
+  #slidec9{
+    background-image: none;
+  }
+  #slidec10{
+    background-image: none;
+  }
+  #slidec11{
+    background-image: none;
+  }
+  #slidec12{
+    background-image: none;
+  }
+  #slidec13{
+    background-image: none;
+  }
+  #slidec14{
+    background-image: none;
+  }
+  #slidec15{
+    background-image: none; 
+  }
+
+  #slidec16{
+    background-image: none; 
+  }
+
+  #slidec17{
+    background-image: none; 
+  }
+
+  #slidec18{
+    background-image: none;  
+  }
+
+  #slidec19{
+    background-image: none;  
+  }
+
+  #slidec20{
+    background-image: none; 
+  }
+
+/*End Neighborhood section*/
+
+/*SOUTH FLORIDA STARTS*/
+
+  #slided1{
+    background-image: none; 
+  }
+
+  #slided2{
+    background-image: none; 
+  }
+
+  #slided3{
+    background-image: none; 
+  }
+
+  #slided4{
+    background-image: none;
+  }
+
+  #slided5{
+    background-image: none;
+  }
+
+  #slided6{
+    background-image: none;
+  }
+
+  #slided7{
+    background-image: none;
+  }
+
+  #slided8{
+    background-image: none;
+  }
+
+  #slided9{
+    background-image: none;
+  }
+
+  #slided10{
+    background-image: none;
+  }
+
+  #slided11{
+    background-image: none;
+  }
+
+  #slided12{
+    background-image: none;
+  }
+
+  #slided13{
+    background-image: none;
+  }
+
+  #slided14{
+    background-image: none;
+  }
+
+  #slided15{
+    background-image: none;
+  }
+
+  #slided16{
+    background-image: none;
+  }
+
+  #slided17{
+    background-image: none;
+  }
+
+  #slided18{
+    background-image: none;
+  }
+
+  #slided19{
+    background-image: none;
+  }
+
+/*SOUTH FLORIDA END*/
+}
+
+/*iPad and Smaller Screens*/
+
+@media screen and (min-width: 700px) and (min-device-width: 700px) {
+
+  .mobile-container {
+    display: none;
+  }
+
+  .desktop-container {
+    display: flex;
+  }
+
+  .textbox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: rgba(53,53,53,0.9);
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-left: 35%;
+    margin-right: 10%;
+    margin-top: 0%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    max-height: 85%;
+  }
+
+  .textbox.left {
+    margin-left: 10%;
+    margin-right: 40%;
+  }
+
+  #footer{
+    position:fixed;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #135e4a 10%, #1d815b 90%,); /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* IE10 */
+    background: -o-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* Opera 11.10+ */
+    background: linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* W3C */
+    z-index:9;
+    text-align:center;
+    color: #fff;
+    padding: 10px 0 0 0;
+    bottom:0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; 
+  }
+
+  .nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;   
+    flex-direction: column; 
+  }
+
+  .nav li {
+    display: inline;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    border: 1px solid #fff;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .nav a{
+    color:#fff;
+  }
+
+  .nav li:hover{
+      background-color: #f47321;
+  }
+
+  .logo {
+    display: flex;
+    margin-top: 30px;
+    top: 20%;
+    left: 82%;
+  }
+
+  .slicknav_menu {
+    display:none;
+  }
+
+  #menu li.active{
+  background: rgb(243,115,33);
+  color: #fff;
+}
+
+  .textbox h1 {
+    font-size: 3em;
+    text-align: left;
+    line-height: 1em;
+    margin-left: .3em;
+    margin-top: .4em;
+    margin-bottom: .2em;
+  }
+
+  .textbox p {
+    font-size: 1.6em;
+    text-align: left;
+    line-height: 1.1em;
+    margin-left: .8em;
+    margin-right: .8em;
+    margin-bottom: 1em;
+  }
+
+  #section0{
+    background-image: url(../img/main-miami-1.jpg);
+    padding: 0% 0 0 0;
+    background-position: center; 
+  }
+
+/* Start Campus Section */ 
+
+  #slidea1{
+    background-image: url(../img/um-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea2{
+    background-image: url(../img/u-sculpture.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea3{
+    background-image: url(../img/um-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea4{
+    background-image: url(../img/um-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea5{
+    background-image: url(../img/um-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea6{
+    background-image: url(../img/um-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea7{
+    background-image: url(../img/um-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea8{
+    background-image: url(../img/um-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea9{
+    background-image: url(../img/um-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea10{
+    background-image: url(../img/um-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea11{
+    background-image: url(../img/um-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea12{
+    background-image: url(../img/um-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea13{
+    background-image: url(../img/um-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea14{
+    background-image: url(../img/um-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea15{
+    background-image: url(../img/um-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea16{
+    background-image: url(../img/um-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea17{
+    background-image: url(../img/um-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea18{
+    background-image: url(../img/um-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea19{
+    background-image: url(../img/um-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea20{
+    background-image: url(../img/um-20.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea21{
+    background-image: url(../img/um-21.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea22{
+    background-image: url(../img/um-22.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea23{
+    background-image: url(../img/um-23.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea24{
+    background-image: url(../img/um-24.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea25{
+    background-image: url(../img/um-25.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+/* End Campus Section */ 
+
+/* Law School Section*/
+
+  #slideb1{
+    background-image: url(../img/campus-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb2{
+    background-image: url(../img/campus-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb3{
+    background-image: url(../img/campus-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb4{
+    background-image: url(../img/campus-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb5{
+    background-image: url(../img/campus-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb6{
+    background-image: url(../img/campus-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb7{
+    background-image: url(../img/campus-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb8{
+    background-image: url(../img/campus-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb9{
+    background-image: url(../img/campus-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  #slideb10{
+    background-image: url(../img/campus-clinton.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb11{
+    background-image: url(../img/campus-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb12{
+    background-image: url(../img/campus-env.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb13{
+    background-image: url(../img/campus-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb14{
+    background-image: url(../img/campus-health.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb15{
+    background-image: url(../img/campus-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb16{
+    background-image: url(../img/campus-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb17{
+    background-image: url(../img/campus-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb18{
+    background-image: url(../img/campus-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb19{
+    background-image: url(../img/campus-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+/*End law school section*/
+
+/* Start Neighborhood Section*/
+
+  #slidec1{
+    background-image: url(../img/neighborhood-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec2{
+    background-image: url(../img/neighborhood-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec3{
+    background-image: url(../img/neighborhood-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec4{
+    background-image: url(../img/neighborhood-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec5{
+    background-image: url(../img/neighborhood-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec6{
+    background-image: url(../img/neighborhood-20.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec7{
+    background-image: url(../img/neighborhood-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec8{
+    background-image: url(../img/neighborhood-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec9{
+    background-image: url(../img/neighborhood-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec10{
+    background-image: url(../img/neighborhood-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec11{
+    background-image: url(../img/neighborhood-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec12{
+    background-image: url(../img/neighborhood-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec13{
+    background-image: url(../img/neighborhood-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec14{
+    background-image: url(../img/neighborhood-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec15{
+    background-image: url(../img/neighborhood-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec16{
+    background-image: url(../img/neighborhood-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec17{
+    background-image: url(../img/neighborhood-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec18{
+    background-image: url(../img/neighborhood-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec19{
+    background-image: url(../img/neighborhood-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec20{
+    background-image: url(../img/neighborhood-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+
+/*End Neighborhood section*/
+
+/* Start South Florida Section */
+
+  #slided1{
+    background-image: url(../img/sfl-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided2{
+    background-image: url(../img/sfl-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided3{
+    background-image: url(../img/sfl-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided4{
+    background-image: url(../img/sfl-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided5{
+    background-image: url(../img/sfl-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided6{
+    background-image: url(../img/sfl-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided7{
+    background-image: url(../img/sfl-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided8{
+    background-image: url(../img/sfl-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided9{
+    background-image: url(../img/sfl-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided10{
+    background-image: url(../img/sfl-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided11{
+    background-image: url(../img/sfl-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided12{
+    background-image: url(../img/sfl-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided13{
+    background-image: url(../img/sfl-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided14{
+    background-image: url(../img/sfl-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided15{
+    background-image: url(../img/sfl-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided16{
+    background-image: url(../img/sfl-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided17{
+    background-image: url(../img/sfl-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided18{
+    background-image: url(../img/sfl-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided19{
+    background-image: url(../img/sfl-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+/* End South Florida Section */
+
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1200px) and (min-device-width: 1200px) {
+
+  .mobile-container {
+    display: none;
+  }
+
+  .desktop-container {
+    display: flex;
+  }
+
+  .textbox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: rgba(53,53,53,0.9);
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-left: 45%;
+    margin-right: 10%;
+    margin-top: 0%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    max-height: 80%;
+  }
+
+  .textbox.left {
+    margin-left: 10%;
+    margin-right: 50%;
+  }
+
+
+  #footer{
+    position:fixed;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #135e4a 10%, #1d815b 90%,); /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* IE10 */
+    background: -o-linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* Opera 11.10+ */
+    background: linear-gradient(90deg, #135e4a 10%, #1d815b 90%); /* W3C */
+    z-index:9;
+    text-align:center;
+    color: #fff;
+    padding: 10px 0 0 0;
+    bottom:0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; 
+  }
+
+  .nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    padding-right: 50px;
+  }
+
+  .nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    padding-right: 80px;
+    margin: 0;    
+  }
+
+  .nav li {
+    display: inline;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    border: 1px solid #fff;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+  }
+
+  .nav a{
+    color:#fff;
+  }
+
+  .nav li:hover{
+      background-color: #f47321;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20%;
+    left: 82%;
+    margin-top: 0px;
+  }
+
+  .slicknav_menu {
+    display:none;
+  }
+
+  #menu li.active{
+  background: rgb(243,115,33);
+  color: #fff;
+}
+
+  .textbox h1 {
+    font-size: 3.7em;
+    text-align: left;
+    line-height: 1.1em;
+    margin-left: .3em;
+    margin-top: .4em;
+    margin-bottom: .2em;
+  }
+
+  .textbox p {
+    font-size: 1.7em;
+    text-align: left;
+    line-height: 1.4em;
+    margin-left: .8em;
+    margin-right: .8em;
+    margin-bottom: 1em;
+  }
+
+  #section0{
+    background-image: url(../img/main-miami-1.jpg);
+    padding: 0% 0 0 0;
+    background-position: center; 
+  }
+
+/*CAMPUS START DESKTOP SIZE PICTURES*/ 
+
+  #slidea1{
+    background-image: url(../img/um-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea2{
+    background-image: url(../img/u-sculpture.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea3{
+    background-image: url(../img/um-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea4{
+    background-image: url(../img/um-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea5{
+    background-image: url(../img/um-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea6{
+    background-image: url(../img/um-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea7{
+    background-image: url(../img/um-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea8{
+    background-image: url(../img/um-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea9{
+    background-image: url(../img/um-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea10{
+    background-image: url(../img/um-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea11{
+    background-image: url(../img/um-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea12{
+    background-image: url(../img/um-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea13{
+    background-image: url(../img/um-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea14{
+    background-image: url(../img/um-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea15{
+    background-image: url(../img/um-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea16{
+    background-image: url(../img/um-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea17{
+    background-image: url(../img/um-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea18{
+    background-image: url(../img/um-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea19{
+    background-image: url(../img/um-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea20{
+    background-image: url(../img/um-20.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea21{
+    background-image: url(../img/um-21.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea22{
+    background-image: url(../img/um-22.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea23{
+    background-image: url(../img/um-23.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea24{
+    background-image: url(../img/um-24.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slidea25{
+    background-image: url(../img/um-25.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+/*CAMPUS END DESKTOP SIZE PICTURES*/ 
+
+/* Law School Section*/
+
+  #slideb1{
+    background-image: url(../img/campus-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb2{
+    background-image: url(../img/campus-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb3{
+    background-image: url(../img/campus-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb4{
+    background-image: url(../img/campus-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb5{
+    background-image: url(../img/campus-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb6{
+    background-image: url(../img/campus-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb7{
+    background-image: url(../img/campus-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb8{
+    background-image: url(../img/campus-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb9{
+    background-image: url(../img/campus-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb10{
+    background-image: url(../img/campus-clinton.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb11{
+    background-image: url(../img/campus-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb12{
+    background-image: url(../img/campus-env.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb13{
+    background-image: url(../img/campus-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb14{
+    background-image: url(../img/campus-health.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb15{
+    background-image: url(../img/campus-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb16{
+    background-image: url(../img/campus-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb17{
+    background-image: url(../img/campus-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slideb18{
+    background-image: url(../img/campus-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slideb19{
+    background-image: url(../img/campus-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+/*End law school section*/
+
+/* Start Neighborhood Section*/
+
+  #slidec1{
+    background-image: url(../img/neighborhood-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec2{
+    background-image: url(../img/neighborhood-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec3{
+    background-image: url(../img/neighborhood-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec4{
+    background-image: url(../img/neighborhood-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec5{
+    background-image: url(../img/neighborhood-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec6{
+    background-image: url(../img/neighborhood-20.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec7{
+    background-image: url(../img/neighborhood-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec8{
+    background-image: url(../img/neighborhood-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec9{
+    background-image: url(../img/neighborhood-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec10{
+    background-image: url(../img/neighborhood-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec11{
+    background-image: url(../img/neighborhood-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec12{
+    background-image: url(../img/neighborhood-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec13{
+    background-image: url(../img/neighborhood-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec14{
+    background-image: url(../img/neighborhood-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec15{
+    background-image: url(../img/neighborhood-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+  #slidec16{
+    background-image: url(../img/neighborhood-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec17{
+    background-image: url(../img/neighborhood-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec18{
+    background-image: url(../img/neighborhood-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec19{
+    background-image: url(../img/neighborhood-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+  #slidec20{
+    background-image: url(../img/neighborhood-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center; 
+  }
+
+
+/*End Neighborhood section*/
+
+/*SOUTH FLORIDA START DESKTOP SIZE PICTURES*/
+
+  #slided1{
+    background-image: url(../img/sfl-1.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided2{
+    background-image: url(../img/sfl-2.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided3{
+    background-image: url(../img/sfl-3.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided4{
+    background-image: url(../img/sfl-4.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided5{
+    background-image: url(../img/sfl-5.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided6{
+    background-image: url(../img/sfl-6.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided7{
+    background-image: url(../img/sfl-7.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided8{
+    background-image: url(../img/sfl-8.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided9{
+    background-image: url(../img/sfl-9.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided10{
+    background-image: url(../img/sfl-10.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided11{
+    background-image: url(../img/sfl-11.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided12{
+    background-image: url(../img/sfl-12.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided13{
+    background-image: url(../img/sfl-13.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided14{
+    background-image: url(../img/sfl-14.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided15{
+    background-image: url(../img/sfl-15.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided16{
+    background-image: url(../img/sfl-16.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided17{
+    background-image: url(../img/sfl-17.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided18{
+    background-image: url(../img/sfl-18.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #slided19{
+    background-image: url(../img/sfl-19.jpg);
+    padding: 0% 0 0 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+
+
+
+
+
+
