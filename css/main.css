@@ -80,6 +80,15 @@ p{
   font-weight: normal;
 }
 
+p.accordion {
+  font-size: 1.3em;
+  margin: 0 auto;
+  line-height: 1.3em;
+  text-align: left;
+  color: #fff;
+  font-weight: normal;
+}
+
 p a:link {
   color: #f87f32;
   -o-transition:.5s;
@@ -117,6 +126,8 @@ p a:hover {
 /*Smartphones (Portrait and Landscape)*/
 
 @media screen and (min-width: 200px) {
+
+
 
   #footer{
     display:none;
@@ -173,7 +184,7 @@ p a:hover {
     -webkit-flex-direction: column;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     }
 
@@ -182,8 +193,16 @@ p a:hover {
       width: 100%;
       max-height: 100%}
 
+  .test {
+    display:flex;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 50px;
+  }
+
     .textbox {
-    display: block;
+    display: hidden;
 /*    flex-grow: 1;
 *//*    height: 25%;
 */
@@ -228,7 +247,7 @@ p a:hover {
 /*CAMPUS START*/
 
   #slidea1{
-    background-image: none;
+    background-image: url("../img/um-1-mobile.jpg");
   }
 
   #slidea2{
